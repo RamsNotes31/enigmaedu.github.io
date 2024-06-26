@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edukasi IT Online</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome untuk ikon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-laptop-code mr-2"></i>Edukasi IT</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Kursus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-light text-primary"
+                href="#"
+                data-toggle="modal"
+                data-target="#signupModal"
+                >Daftar</a>
+                <li class="nav-item">
+             <a class="nav-link btn btn-outline-light text-primary" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header dengan Background Video -->
+    <header class="video-header">
+      <div class="overlay"></div>
+      <video playsinline autoplay muted loop>
+        <source src="video-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Belajar IT dari Ahlinya</h1>
+            <p class="lead mb-0">
+              Jadilah ahli teknologi dengan kursus berkualitas
+            </p>
+            <form class="form-inline justify-content-center mt-4">
+              <input
+                class="form-control form-control-lg mr-2"
+                type="search"
+                placeholder="Cari kursus..."
+                aria-label="Search"
+              />
+              <button class="btn btn-primary btn-lg" type="submit">Cari</button>
+            </form>
+            <a href="#courses" class="btn btn-outline-light btn-lg mt-3"
+              >Jelajahi Kursus</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bagian Kursus Populer -->
+    <section id="courses" class="container my-5">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Kursus Populer</h2>
+        <p class="section-subtitle">Pelajari kursus IT terbaik kami</p>
+      </div>
+      <div class="row">
+        <!-- Kartu Kursus -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Kursus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pemrograman Python</h5>
+              <p class="card-text">
+                Pelajari dasar-dasar pemrograman dengan Python, bahasa
+                pemrograman yang sangat populer dan mudah dipelajari.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Kursus -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Kursus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan Web</h5>
+              <p class="card-text">
+                Pelajari cara membangun situs web yang responsif dan menarik
+                menggunakan HTML, CSS, dan JavaScript.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Kursus -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Kursus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Data Science dengan R</h5>
+              <p class="card-text">
+                Pelajari analisis data dan ilmu data menggunakan bahasa
+                pemrograman R untuk mendapatkan wawasan dari data.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Artikel Blog Terbaru -->
+    <section id="blog" class="container my-5">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Artikel Blog Terbaru</h2>
+        <p class="section-subtitle">
+          Tetap up-to-date dengan artikel terbaru dari dunia IT
+        </p>
+      </div>
+      <div class="row">
+        <!-- Artikel Blog -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mengenal Machine Learning</h5>
+              <p class="card-text">
+                Pelajari konsep dasar machine learning dan bagaimana
+                penerapannya dalam kehidupan sehari-hari.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Artikel Blog -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tren Terbaru dalam Pengembangan Web</h5>
+              <p class="card-text">
+                Jelajahi tren terbaru dalam pengembangan web, mulai dari
+                framework hingga desain responsif.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Artikel Blog -->
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="card-img-top"
+              alt="Gambar Blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pemrograman dengan Kotlin</h5>
+              <p class="card-text">
+                Pelajari bagaimana bahasa pemrograman Kotlin dapat digunakan
+                untuk pengembangan aplikasi Android.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Testimoni -->
+    <section id="testimonials" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Apa Kata Mereka?</h2>
+          <p class="section-subtitle">
+            Testimoni dari para peserta kursus kami
+          </p>
+        </div>
+        <div class="row">
+          <!-- Testimoni 1 -->
+          <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+                <p class="card-text">
+                  "Materi kursus sangat bermanfaat dan mudah dipahami."
+                </p>
+                <p class="card-text"><strong>Andi Wijaya</strong></p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimoni 2 -->
+          <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+                <p class="card-text">
+                  "Saya sangat senang dengan kursus pengembangan web ini.
+                  Sekarang saya bisa membuat situs web sendiri dengan tampilan
+                  yang profesional."
+                </p>
+                <p class="card-text"><strong>Siti Nuraini</strong></p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimoni 3 -->
+          <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+                <p class="card-text">
+                  "Edukasi IT Online benar-benar membantu saya dalam belajar
+                  ilmu data. Materinya lengkap dan praktis untuk diterapkan di
+                  dunia nyata."
+                </p>
+                <p class="card-text"><strong>Budi Santoso</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Kontak dengan Peta -->
+    <section id="contact" class="container-fluid py-5 bg-secondary text-white">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Kontak Kami</h2>
+        <p class="section-subtitle">
+          Hubungi kami untuk informasi lebih lanjut
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="container">
+            <h3>Hubungi Kami</h3>
+            <p>Email: dukungan@edukasiit.com</p>
+            <p>Telepon: +62 123 456 7890</p>
+            <p>Alamat: Jl. Teknologi No. 10, Jakarta</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer class="bg-primary text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Kontak Kami</h5>
+            <p>Email: dukungan@edukasiit.com</p>
+            <p>Telepon: +62 123 456 7890</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Tautan Cepat</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Beranda</a></li>
+              <li><a href="#courses" class="text-white">Kursus</a></li>
+              <li><a href="#blog" class="text-white">Blog</a></li>
+              <li><a href="#testimonials" class="text-white">Testimoni</a></li>
+              <li><a href="#contact" class="text-white">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>Ikuti Kami</h5>
+            <a href="#" class="text-white mr-2"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="#" class="text-white mr-2"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a href="#" class="text-white mr-2"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p>&copy; 2024 Edukasi IT. Hak Cipta Dilindungi.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Pendaftaran -->
+    <!-- Modal Pendaftaran -->
+<div
+class="modal fade"
+id="signupModal"
+tabindex="-1"
+aria-labelledby="signupModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="signupModalLabel">Daftar Sekarang</h5>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form action="register.php" method="POST">
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="nama"
+            placeholder="Masukkan nama lengkap"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Masukkan email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Kata Sandi</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="kata_sandi"
+            placeholder="Masukkan kata sandi"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Konfirmasi Kata Sandi</label>
+          <input
+            type="password"
+            class="form-control"
+            id="confirm-password"
+            name="konfirmasi_kata_sandi"
+            placeholder="Masukkan ulang kata sandi"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Daftar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- Modal Login -->
+<!-- Modal Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="login.php" method="POST">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" class="form-control" id="login-email" name="email" placeholder="Masukkan email" />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Kata Sandi</label>
+              <input type="password" class="form-control" id="login-password" name="kata_sandi" placeholder="Masukkan kata sandi" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet for map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

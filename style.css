@@ -1,0 +1,198 @@
+/* Custom CSS untuk halaman Edukasi IT Online dengan tema hijau tosca */
+
+/* Pengaturan warna tema */
+:root {
+    --primary-color: #2C8D85; /* Warna hijau tosca */
+    --secondary-color: #185d55; /* Warna hijau tosca yang lebih gelap */
+    --light-color: #edf7f5; /* Warna latar belakang yang lebih terang */
+    --dark-color: #1a3c3a; /* Warna hijau tosca yang lebih gelap untuk teks */
+}
+
+/* Pengaturan font */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styles untuk video header */
+.video-header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.video-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+.video-header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.video-header .container {
+    z-index: 2;
+    position: relative;
+}
+
+/* Styles untuk navbar */
+.navbar {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--light-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Styles untuk tombol daftar */
+.navbar-dark .nav-item .btn-outline-light {
+    color: var(--primary-color);
+    border-color: var(--light-color);
+}
+
+.navbar-dark .nav-item .btn-outline-light:hover,
+.navbar-dark .nav-item .btn-outline-light:focus {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+/* Styles untuk bagian kursus */
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .card-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.card .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Styles untuk bagian blog */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Styles untuk bagian testimoni */
+.bg-light {
+    background-color: var(--light-color) !important;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.card-body i {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styles untuk bagian kontak */
+.container-fluid {
+    padding: 50px 0;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+}
+
+/* Styles untuk footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer a {
+    color: var(--light-color);
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .video-header {
+        height: 60vh;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
